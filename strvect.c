@@ -24,6 +24,7 @@ char** file_row_list(FILE *f, char **vector, int *n) {
 			vector = realloc(vector, sizeof(vector)*size);
 		}
 	}
+	vector = realloc(vector, sizeof(vector)*(*n));
 	
 	return vector;
 }
